@@ -33,11 +33,7 @@
   
   // 4. 計算全部數值的合計數
   function SumDataforEach(arr){
-      var sum=0;
-      arr.forEach(function(element) {
-          sum+=element;// sum=sum+element
-      });
-      return sum;
+    return arr.reduce((a, b) => a + b);
   }
   console.log(4);
   console.log(SumDataforEach(num1));
